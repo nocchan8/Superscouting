@@ -90,14 +90,12 @@
       "fields": [
         {
           "title": "Centre",
-          "description": "Which robot reached the centre first",
-          "type": "number",
+          "description": "Which robot reached the centre first?",
+          "type": "text",
           "required": false,
           "code": "centre",
           "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 19999
+          "defaultValue": ""
         },
         {
           "title": "Won Auto",
@@ -119,14 +117,12 @@
       "fields": [
         {
           "title": "Defence Robot",
-          "description": "Which robot played defence",
-          "type": "number",
+          "description": "Which robot played defence?",
+          "type": "text",
           "required": false,
           "code": "redDefenceRobot",
           "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 19999
+          "defaultValue": ""
         },
         {
           "title": "Defence Rating",
@@ -168,14 +164,12 @@
       "fields": [
         {
           "title": "Defence Robot",
-          "description": "Which robot played defence",
-          "type": "number",
+          "description": "Which robot played defence?",
+          "type": "text",
           "required": false,
           "code": "blueDefenceRobot",
           "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 19999
+          "defaultValue": ""
         },
         {
           "title": "Defence Rating",
@@ -217,7 +211,7 @@
       "fields": [
         {
           "title": "High Foul Match",
-          "description": "Are there more than 15 foul points",
+          "description": "Were there more than 15 foul points",
           "type": "boolean",
           "required": false,
           "code": "highFoulMatch",
