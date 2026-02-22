@@ -2,7 +2,7 @@
   "title": "Superscout",
   "page_title": "Rebuilt",
   "delimiter": "\t",
-  "teamNumber": 2713,
+  "teamNumber": 5584,
   "floatingField": {
     "show": false,
     "codeValue": "teamNumber"
@@ -122,7 +122,7 @@
           "description": "Which robot played defence",
           "type": "number",
           "required": false,
-          "code": "defenceRobot",
+          "code": "redDefenceRobot",
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
@@ -133,7 +133,7 @@
           "description": "How effective was this team's defence?",
           "type": "multi-select",
           "required": false,
-          "code": "defenceRating",
+          "code": "redDefenceRating",
           "formResetBehavior": "reset",
           "choices": {
             "1": "Recieved penalties",
@@ -151,7 +151,7 @@
           "description": "What kind of defence was played?",
           "type": "multi-select",
           "required": false,
-          "code": "defenceStrat",
+          "code": "redDefenceStrat",
           "formResetBehavior": "reset",
           "choices": {
             "Steal": "Stealing from opponent alliance zone",
@@ -162,7 +162,7 @@
         }
       ]
     },
-     {
+    {
       "name": "Blue Alliance",
       "fields": [
         {
@@ -170,7 +170,7 @@
           "description": "Which robot played defence",
           "type": "number",
           "required": false,
-          "code": "defenceRobot",
+          "code": "blueDefenceRobot",
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
@@ -181,7 +181,7 @@
           "description": "How effective was this team's defence?",
           "type": "multi-select",
           "required": false,
-          "code": "defenceRating",
+          "code": "blueDefenceRating",
           "formResetBehavior": "reset",
           "choices": {
             "1": "Recieved penalties",
@@ -199,7 +199,7 @@
           "description": "What kind of defence was played?",
           "type": "multi-select",
           "required": false,
-          "code": "defenceStrat",
+          "code": "blueDefenceStrat",
           "formResetBehavior": "reset",
           "choices": {
             "Steal": "Stealing from opponent alliance zone",
