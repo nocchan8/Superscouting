@@ -82,39 +82,6 @@
           "code": "matchNumber",
           "formResetBehavior": "increment",
           "defaultValue": 1
-        },
-        {
-          "title": "Alliance",
-          "description": "The robot you are scouting this match, based on driver station position.",
-          "type": "select",
-          "required": false,
-          "code": "robot",
-          "formResetBehavior": "reset",
-          "defaultValue": "N/A",
-          "choices": {
-            "Red Alliance": "Red",
-            "Blue Alliance": "Blue"
-          }
-        },
-        {
-          "title": "Team Number",
-          "description": "The team number of the robot you're scouting.",
-          "type": "number",
-          "required": false,
-          "code": "teamNumber",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 19999
-        },
-        {
-          "title": "No Show",
-          "description": "Team number if robot did not show up for the match.",
-          "type": "text",
-          "required": false,
-          "code": "noShow",
-          "formResetBehavior": "reset",
-          "defaultValue": ""
         }
       ]
     },
@@ -133,28 +100,23 @@
           "max": 19999
         },
         {
-          "title": "Climbed",
-          "description": "Which robot/s climbed",
-          "type": "text",
+          "title": "Won Auto",
+          "description": "Which alliance won auto?",
+          "type": "select",
           "required": false,
-          "code": "autoClimbed",
+          "code": "allianceWonAuto",
           "formResetBehavior": "reset",
-          "defaultValue": ""
+          "defaultValue": "",
+          "choices": {
+            "Red": "Red Alliance",
+            "Blue": "Blue Alliance"
+          }
         }
       ]
     },
     {
-      "name": "Teleop",
+      "name": "Red Alliance",
       "fields": [
-        {
-          "title": "Alliance won auto?",
-          "description": "Did your alliance win the autonomous period?",
-          "type": "boolean",
-          "required": false,
-          "code": "allianceWonAuto",
-          "formResetBehavior": "reset",
-          "defaultValue": false
-        },
         {
           "title": "Defence Robot",
           "description": "Which robot played defence",
@@ -174,76 +136,76 @@
           "code": "defenceRating",
           "formResetBehavior": "reset",
           "choices": {
-            "1": "No effect",
-            "2": "Slowed cycle times by <5 secs",
-            "3": "Slowed cycle times by >5 secs",
-            "4": "Lowered shooter accuracy by <10%",
-            "5": "Lowered shooter accuracy by >10%",
-            "6": "Shut down 1 robot",
-            "7": "Shut down 1 or more robots"
+            "1": "Recieved penalties",
+            "2": "No effect",
+            "3": "Slowed cycle times by <5 secs",
+            "4": "Slowed cycle times by >5 secs",
+            "5": "Lowered shooter accuracy by <10%",
+            "6": "Lowered shooter accuracy by >10%",
+            "7": "Shut down 1 robot",
+            "8": "Shut down 1 or more robots"
           }
         },
         {
-          "title": "Mechanical Issue?",
-          "description": "Did the robot have a mechanical issue during the match?",
-          "type": "boolean",
+          "title": "Defence Strategy",
+          "description": "What kind of defence was played?",
+          "type": "multi-select",
           "required": false,
-          "code": "mechIssue",
+          "code": "defenceStrat",
           "formResetBehavior": "reset",
-          "defaultValue": false
-        },
-        {
-          "title": "Died?",
-          "description": "Did the robot die during the match?",
-          "type": "boolean",
-          "required": false,
-          "code": "died",
-          "formResetBehavior": "reset",
-          "defaultValue": false
-        },
-        {
-          "title": "Tipped/Fell Over",
-          "description": "Did the robot tip or fall over during the match?",
-          "type": "boolean",
-          "required": false,
-          "code": "tipped",
-          "formResetBehavior": "reset",
-          "defaultValue": false
+          "choices": {
+            "Steal": "Stealing from opponent alliance zone",
+            "Trench": "Camping trench",
+            "Bump": "Camping bump",
+            "AZ": "Defence in opponent alliance zone"
+          }
         }
       ]
     },
-    {
-      "name": "Endgame",
+     {
+      "name": "Blue Alliance",
       "fields": [
         {
-          "title": "Climbed",
-          "description": "The level the robot climbed during endgame.",
-          "type": "select",
-          "required": true,
-          "code": "climbed",
+          "title": "Defence Robot",
+          "description": "Which robot played defence",
+          "type": "number",
+          "required": false,
+          "code": "defenceRobot",
           "formResetBehavior": "reset",
-          "defaultValue": "No",
+          "defaultValue": 0,
+          "min": 0,
+          "max": 19999
+        },
+        {
+          "title": "Defence Rating",
+          "description": "How effective was this team's defence?",
+          "type": "multi-select",
+          "required": false,
+          "code": "defenceRating",
+          "formResetBehavior": "reset",
           "choices": {
-            "No": "No Climb",
-            "L1": "Level 1",
-            "L2": "Level 2",
-            "L3": "Level 3",
-            "F": "Failed Climb"
+            "1": "Recieved penalties",
+            "2": "No effect",
+            "3": "Slowed cycle times by <5 secs",
+            "4": "Slowed cycle times by >5 secs",
+            "5": "Lowered shooter accuracy by <10%",
+            "6": "Lowered shooter accuracy by >10%",
+            "7": "Shut down 1 robot",
+            "8": "Shut down 1 or more robots"
           }
         },
         {
-          "title": "Where Climbed",
-          "description": "Where on the tower did the robot climb?",
-          "type": "select",
+          "title": "Defence Strategy",
+          "description": "What kind of defence was played?",
+          "type": "multi-select",
           "required": false,
-          "code": "climbPos",
+          "code": "defenceStrat",
           "formResetBehavior": "reset",
-          "defaultValue": "No",
           "choices": {
-            "No": "No Climb",
-            "Out": "Output Side",
-            "Mid": "Middle",
-            "Dep": "Depot Side"
+            "Steal": "Stealing from opponent alliance zone",
+            "Trench": "Camping trench",
+            "Bump": "Camping bump",
+            "AZ": "Defence in opponent alliance zone"
           }
         }
       ]
@@ -252,88 +214,22 @@
       "name": "Postmatch",
       "fields": [
         {
-          "title": "Scoring Effectiveness",
-          "description": "Rate the robot's scoring effectiveness.",
-          "type": "range",
+          "title": "High Foul Match",
+          "description": "Are there more than 15 foul points",
+          "type": "boolean",
           "required": false,
-          "code": "scoringEff",
+          "code": "highFoulMatch",
           "formResetBehavior": "reset",
-          "defaultValue": 3,
-          "min": 0,
-          "max": 5,
-          "step": 1
+          "defaultValue": false
         },
         {
-          "title": "Scored How?",
-          "description": "How did the robot score?",
-          "type": "select",
+          "title": "Flag For Rewatch",
+          "description": "Should this match be analysed more in depth/reviewed by strat team for pick list?",
+          "type": "boolean",
           "required": false,
-          "code": "scoredHow",
+          "code": "flagForRewatch",
           "formResetBehavior": "reset",
-          "defaultValue": "blank",
-          "choices": {
-            "blank": "(blank)",
-            "driving": "While driving",
-            "stationary": "While stationary",
-            "both": "Both",
-            "none": "No scoring"
-          }
-        },
-        {
-          "title": "Passing Skill",
-          "description": "Rate the robot's passing skill.",
-          "type": "range",
-          "required": false,
-          "code": "passingSkill",
-          "formResetBehavior": "reset",
-          "defaultValue": 3,
-          "min": 0,
-          "max": 5,
-          "step": 1
-        },
-        {
-          "title": "Passed How?",
-          "description": "How did the robot pass?",
-          "type": "select",
-          "required": false,
-          "code": "passedHow",
-          "formResetBehavior": "reset",
-          "defaultValue": "blank",
-          "choices": {
-            "blank": "(blank)",
-            "driving": "While driving",
-            "stationary": "While stationary",
-            "both": "Both",
-            "none": "No Passing"
-          }
-        },
-        {
-          "title": "Passing Location?",
-          "description": "Where did the robot pass?",
-          "type": "select",
-          "required": false,
-          "code": "passLoc",
-          "formResetBehavior": "reset",
-          "defaultValue": "blank",
-          "choices": {
-            "blank": "(blank)",
-            "scattered": "Scattered",
-            "intentional": "Intentional",
-            "both": "Both",
-            "none": "No passing"
-          }
-        },
-        {
-          "title": "Defense Skill",
-          "description": "Rate the robot's defensive skill.",
-          "type": "range",
-          "required": false,
-          "code": "defSkill",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 5,
-          "step": 1
+          "defaultValue": false
         },
         {
           "title": "Yellow/Red Card",
@@ -356,7 +252,7 @@
           "formResetBehavior": "reset",
           "defaultValue": "",
           "min": 0,
-          "max": 100
+          "max": 400
         }
       ]
     }
