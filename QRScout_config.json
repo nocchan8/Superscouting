@@ -136,14 +136,14 @@
           "code": "redDefenceRating",
           "formResetBehavior": "reset",
           "choices": {
-            "1": "Recieved penalties",
-            "2": "No effect",
-            "3": "Slowed cycle times by <5 secs",
-            "4": "Slowed cycle times by >5 secs",
-            "5": "Lowered shooter accuracy by <10%",
-            "6": "Lowered shooter accuracy by >10%",
-            "7": "Shut down 1 robot",
-            "8": "Shut down 1 or more robots"
+            " Penalised": "Recieved penalties",
+            " No effect": "No effect",
+            " Cycle <5": "Slowed cycle times by <5 secs",
+            " Cycle >5": "Slowed cycle times by >5 secs",
+            " Accuracy <10%": "Lowered shooter accuracy by <10%",
+            " Accuracy >10%": "Lowered shooter accuracy by >10%",
+            " Shut down 1": "Shut down 1 robot",
+            " Shut down >1": "Shut down 1 or more robots"
           }
         },
         {
@@ -154,10 +154,11 @@
           "code": "redDefenceStrat",
           "formResetBehavior": "reset",
           "choices": {
-            "Steal": "Stealing from opponent alliance zone",
-            "Trench": "Camping trench",
-            "Bump": "Camping bump",
-            "AZ": "Defence in opponent alliance zone"
+            " Steal": "Stealing from opponent",
+            " Trench": "Camping trench",
+            " Bump": "Camping bump",
+            " Zone": "Defence in opponent alliance zone",
+            " Commit": "Defend 1 specific robot"
           }
         }
       ]
@@ -184,14 +185,14 @@
           "code": "blueDefenceRating",
           "formResetBehavior": "reset",
           "choices": {
-            "1": "Recieved penalties",
-            "2": "No effect",
-            "3": "Slowed cycle times by <5 secs",
-            "4": "Slowed cycle times by >5 secs",
-            "5": "Lowered shooter accuracy by <10%",
-            "6": "Lowered shooter accuracy by >10%",
-            "7": "Shut down 1 robot",
-            "8": "Shut down 1 or more robots"
+            " Penalised": "Recieved penalties",
+            " No effect": "No effect",
+            " Cycle <5": "Slowed cycle times by <5 secs",
+            " Cycle >5": "Slowed cycle times by >5 secs",
+            " Accuracy <10%": "Lowered shooter accuracy by <10%",
+            " Accuracy >10%": "Lowered shooter accuracy by >10%",
+            " Shut down 1": "Shut down 1 robot",
+            " Shut down >1": "Shut down 1 or more robots"
           }
         },
         {
@@ -202,10 +203,11 @@
           "code": "blueDefenceStrat",
           "formResetBehavior": "reset",
           "choices": {
-            "Steal": "Stealing from opponent alliance zone",
-            "Trench": "Camping trench",
-            "Bump": "Camping bump",
-            "AZ": "Defence in opponent alliance zone"
+            " Steal": "Stealing from opponent",
+            " Trench": "Camping trench",
+            " Bump": "Camping bump",
+            " Zone": "Defence in opponent alliance zone",
+            " Commit": "Defend 1 specific robot"
           }
         }
       ]
@@ -230,19 +232,6 @@
           "code": "flagForRewatch",
           "formResetBehavior": "reset",
           "defaultValue": false
-        },
-        {
-          "title": "Yellow/Red Card",
-          "type": "select",
-          "required": true,
-          "code": "yc",
-          "formResetBehavior": "reset",
-          "defaultValue": "No Card",
-          "choices": {
-            "No Card": "No Card",
-            "Yellow": "Yellow Card",
-            "Red": "Red Card"
-          }
         },
         {
           "title": "Comments",
