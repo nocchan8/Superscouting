@@ -136,10 +136,10 @@
             " No effect": "No effect",
             " Cycle <5": "Slowed cycle times by <5 secs",
             " Cycle >5": "Slowed cycle times by >5 secs",
-            " Accuracy <10%": "Lowered shooter accuracy by <10%",
-            " Accuracy >10%": "Lowered shooter accuracy by >10%",
+            " Lower accuracy <10%": "Lowered shooter accuracy by <10%",
+            " Lower accuracy >10%": "Lowered shooter accuracy by >10%",
             " Shut down 1 robot": "Shut down 1 robot",
-            " Shut down >1": "Shut down 1 or more robots"
+            " Shut down 1+ robots": "Shut down 1 or more robots"
           }
         },
         {
@@ -183,10 +183,10 @@
             " No effect": "No effect",
             " Cycle <5": "Slowed cycle times by <5 secs",
             " Cycle >5": "Slowed cycle times by >5 secs",
-            " Accuracy <10%": "Lowered shooter accuracy by <10%",
-            " Accuracy >10%": "Lowered shooter accuracy by >10%",
+            " Lower accuracy <10%": "Lowered shooter accuracy by <10%",
+            " Lower accuracy >10%": "Lowered shooter accuracy by >10%",
             " Shut down 1 robot": "Shut down 1 robot",
-            " Shut down >1": "Shut down 1 or more robots"
+            " Shut down 1+ robots": "Shut down 1 or more robots"
           }
         },
         {
