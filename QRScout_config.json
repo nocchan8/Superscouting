@@ -84,21 +84,16 @@
           "defaultValue": 1
         },
         {
-          "title": "Robot",
+          "title": "Alliance",
           "description": "The robot you are scouting this match, based on driver station position.",
           "type": "select",
           "required": false,
           "code": "robot",
-          "formResetBehavior": "preserve",
-          "defaultValue": "R1",
+          "formResetBehavior": "reset",
+          "defaultValue": "N/A",
           "choices": {
-            "N/A": "N/A",
-            "R1": "Red 1",
-            "R2": "Red 2",
-            "R3": "Red 3",
-            "B1": "Blue 1",
-            "B2": "Blue 2",
-            "B3": "Blue 3"
+            "Red Alliance": "Red",
+            "Blue Alliance": "Blue"
           }
         },
         {
@@ -126,7 +121,7 @@
     {
       "name": "Autonomous",
       "fields": [
-       {
+        {
           "title": "Centre",
           "description": "Which robot reached the centre first",
           "type": "number",
@@ -177,16 +172,16 @@
           "type": "multi-select",
           "required": false,
           "code": "defenceRating",
+          "formResetBehavior": "reset",
           "choices": {
             "1": "No effect",
-            "2": "Slowed down cycle times by <5 seconds",
-            "3": "Slowed down cycle times by >5 seconds",
+            "2": "Slowed cycle times by <5 secs",
+            "3": "Slowed cycle times by >5 secs",
             "4": "Lowered shooter accuracy by <10%",
             "5": "Lowered shooter accuracy by >10%",
             "6": "Shut down 1 robot",
             "7": "Shut down 1 or more robots"
-          },
-          "formResetBehavior": "reset"
+          }
         },
         {
           "title": "Mechanical Issue?",
